@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{paracol}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{paracol}
+\usepackage{amssymb, wasysym}
+\usepackage{eucal}
+\usepackage{balance}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{array}
+\geometry{a4paper, top=1.9cm, bottom=2cm, left=2cm, right=2cm}
+\renewcommand{\arraystretch}{1.6}
+\renewcommand{\normalsize}{\fontsize{9}{9}\selectfont}
+\begin{document}
+	
+	% Титульный лист
+	\input{titul}
+	
+	
+	\newgeometry{top=1.9cm, bottom=2cm, left=2.3cm, right=2.3cm}
+	\pagestyle{fancy}
+	\fancyhf{}
+	\fancyfoot[R]{\textbf{39}}
+	\renewcommand{\headrulewidth}{0pt}
+	\input{document}
+	\fancyfoot[R]{}
+	\newgeometry{top=2cm, bottom=2cm, left=1.5cm, right=1.5cm}
+	\input{document_part_2}
+	
+\end{document}

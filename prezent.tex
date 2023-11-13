@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{geometry}
+
+\geometry{paperwidth=453.4px,paperheight=255px}
+
+\setbeamercolor{footline}{fg=gray}
+\setbeamertemplate{footline}{%
+	\ifnum\value{framenumber}>1
+	\makebox[\paperwidth][r]{\insertframenumber\hspace{7ex}}%
+	\fi
+	\vspace{2ex}%
+}
+
+\title{\\\vspace{2cm} Лекция 6.\\\vspace{0.1cm}\textcolor{black}{\textbf{Анализ предметной области и требования к ПО}\\ \textbf{Качество ПО и методы его контроля} \\ \textbf{Экстремальное программирование}}}
+\author{\textcolor{blue}{Лектор}\newline\newline Елена Болдырева \hspace{2cm}eaboldyreva@itmo.ru}
+\date{}
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+		\begin{tikzpicture}[overlay, remember picture]
+			\node[anchor=north east, yshift=-0.3cm, xshift=-0.5cm, font=\Large\bfseries, align=right] at (current page.north east) {\textcolor{blue}{И}\textcolor{gray}{нформатика}};
+			\draw[gray, line width=0.2mm] ([yshift=-10mm]current page.north east) -- ([yshift=-10mm]current page.north west);
+			
+		\end{tikzpicture}
+	\end{frame}
+	
+	\begin{frame}{\vspace{0.2cm}\newline\textbf{ПЛАН:}}
+		\begin{tikzpicture}[overlay, remember picture]
+			\draw[gray, line width=0.2mm] ([xshift=3cm, yshift=-10mm]current page.north east) -- ++(-\textwidth,0);
+		\end{tikzpicture}
+		\tableofcontents
+		\vspace{-1.5cm}\textbf{Раздел 4.} Анализ предметной области и требования к ПО\\
+		\hspace{0.8cm}Анализ предметной области\\
+		\hspace{0.8cm}Выделение и анализ требований\\
+		\hspace{0.8cm}Варианты использования\\
+		\textbf{Раздел 5.} Качество ПО и методы его контроля\\
+		\hspace{0.8cm}Качество ПО\\
+		\hspace{0.8cm}Метода контроля качества\\
+		\hspace{0.8cm}Ошибки в программах\\
+		\textbf{Раздел 6.} Архитектура ПО\\
+		\hspace{0.8cm}Анализ области решений\\
+		\hspace{0.8cm}Разработка архитектуры\\
+		\hspace{0.8cm}UML-диаграммы\\
+	\end{frame}
+	
+	\begin{frame}
+		\begin{tikzpicture}[overlay, remember picture]
+			\draw[gray, line width=0.2mm] ([xshift=3cm, yshift=-10mm]current page.north east) -- ++(-\textwidth,0);
+		\end{tikzpicture}
+		\begin{center}
+			\textbf{\textcolor{blue}{РАЗДЕЛ 1. АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ\\И ТРЕБОВАНИЯ К ПО}}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}{}
+		\begin{tikzpicture}[overlay, remember picture]
+			\node[anchor=north east, yshift=-2.5mm, xshift=-0.5cm, font=\Large\bfseries, align=right] at (current page.north east) {\textcolor{gray}{Бизнес-моделирование}};
+			\draw[gray, line width=0.2mm] ([xshift=3cm, yshift=-10mm]current page.north east) -- ++(-\textwidth,0);
+		\end{tikzpicture}
+		
+		\vspace{0.4cm}
+		
+		\begin{center}
+			\textbf{Область ответственности будущей системы. Схема Захмана}
+		\end{center}
+		
+		\vspace{-2.5mm} % Измените это значение по вашему усмотрению
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{image007}
+			\label{fig:image007}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{}
+		\begin{tikzpicture}[overlay, remember picture]
+			\node[anchor=north east, yshift=-0.3cm, xshift=-0.5cm, font=\Large\bfseries, align=right] at (current page.north east) {\textcolor{blue}{ДИАГРАММЫ ПОТОКОВ ДАННЫХ}};
+			\node[anchor=north east, yshift=-1cm, xshift=-0.5cm, font=\Large\bfseries, align=right] at (current page.north east) {\textcolor{blue}{(DATA FLOW DIAGRAMS)}};
+			\draw[gray, line width=0.2mm] ([xshift=3cm, yshift=-9mm]current page.north east) -- ++(-\textwidth,0);
+		\end{tikzpicture}
+		\vspace{1cm}
+		\begin{flushleft}
+			\begin{minipage}{0.4\textwidth}
+				Схема деятельности компании в\\
+				нотации Йордана-ДеМарко.\newline
+				
+				Схема деятельности компании в\\
+				нотации Гэйна-Сарсона.\newline
+				
+				Диаграмма сущностей и связей.
+			\end{minipage}%
+			\begin{minipage}{0.6\textwidth}
+				\includegraphics[width=1\linewidth]{4_3}
+			\end{minipage}
+		\end{flushleft}
+		
+	\end{frame}
+	
+	
+	
+	
+\end{document}
